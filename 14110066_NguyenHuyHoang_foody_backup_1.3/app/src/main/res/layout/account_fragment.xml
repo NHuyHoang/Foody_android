@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/systemGray">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:text="Tài khoản"
+            android:gravity="center"
+            android:textColor="@color/systemWhite"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:paddingTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_not_login_profile"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#ffffff"
+                android:text="Đăng nhập"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/rightarrow"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/systemWhite">
+        <ListView
+            android:id="@+id/custom_list1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/systemWhite"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/systemWhite">
+        <ListView
+            android:id="@+id/custom_list2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/systemWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/systemWhite">
+        <ListView
+            android:id="@+id/custom_list3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/systemWhite"/>
+
+    </LinearLayout>
+</LinearLayout>
