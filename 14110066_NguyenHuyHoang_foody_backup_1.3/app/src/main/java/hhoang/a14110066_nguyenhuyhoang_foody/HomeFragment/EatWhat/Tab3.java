@@ -13,15 +13,19 @@ import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+
 import java.io.File;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import hhoang.a14110066_nguyenhuyhoang_foody.DBController.ASyncTask;
 import hhoang.a14110066_nguyenhuyhoang_foody.DBController.DBHandler;
 import hhoang.a14110066_nguyenhuyhoang_foody.DBController.DatabaseController;
 import hhoang.a14110066_nguyenhuyhoang_foody.DBController.RestClientController;
-import hhoang.a14110066_nguyenhuyhoang_foody.Main.ExpandableListAdapter;
+import hhoang.a14110066_nguyenhuyhoang_foody.Adapter.ExpandableListAdapter;
+import hhoang.a14110066_nguyenhuyhoang_foody.DBController.RestClientEvent;
 import hhoang.a14110066_nguyenhuyhoang_foody.Main.MyApplication;
 import hhoang.a14110066_nguyenhuyhoang_foody.Main.ProvinceCityChoice;
 import hhoang.a14110066_nguyenhuyhoang_foody.R;
@@ -68,12 +72,16 @@ public class Tab3 extends Fragment {
                 //set là biến giá trị quận
                 ((MyApplication)getContext().getApplicationContext()).setDistrict(tv.getText().toString());
                 //Lay id tren server
-                RestClientController resController = new RestClientController(getContext());
+
+                String cityName = ((MyApplication)getActivity().getApplicationContext()).getCity();
+                String disName = ((MyApplication)getActivity().getApplicationContext()).getDistrict();
+
+                RestClientController resController = new RestClientController(getContext(),null);
                 resController.GetDisId();
                 //
-                int disid = ((MyApplication)getContext().getApplicationContext()).getDistrictid();
-                Toast.makeText(getActivity(), String.valueOf(disid),
-                        Toast.LENGTH_LONG).show();
+
+
+
                 return true;
             }
         });

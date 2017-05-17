@@ -14,9 +14,9 @@ public class MyApplication extends Application {
     private String district;
     private String roads;
 
-    private int cityid;
-    private int districtid;
-    private int roadid;
+    private int cityid = -1;
+    private int districtid = -1;
+    private int roadid = -1;
 
     public int getCityid() {
         return cityid;
@@ -66,7 +66,7 @@ public class MyApplication extends Application {
     }
 
     public void setCity(String city) {
-
+        districtid = -1;
         district ="";
         this.city = city;
     }

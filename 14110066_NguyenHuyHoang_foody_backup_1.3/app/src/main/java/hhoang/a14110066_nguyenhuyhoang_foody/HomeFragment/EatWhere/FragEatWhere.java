@@ -126,7 +126,7 @@ public class FragEatWhere extends Fragment implements TabHost.OnTabChangeListene
             //Nếu trạng thái = 1 thì hiển thị fragment mặc định
             //đổi màu tabwidget
             if(t==1){
-                DefaultScreen defaultScreen = new DefaultScreen();
+                Tab1 defaultScreen = new Tab1();
                 transaction.replace(R.id.realtabcontent, defaultScreen);
                 mTabHost.getTabWidget().getChildAt(position).setBackgroundResource(R.color.systemWhite);
             }

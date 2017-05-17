@@ -6,4 +6,5 @@
     <color name="systemWhite">#ffffff</color>
     <color name="systemGray">#eeeeee</color>
     <color name="lightlyGray">#0e171b</color>
+    <color name="systemGreen">#1f8c07</color>
 </resources>

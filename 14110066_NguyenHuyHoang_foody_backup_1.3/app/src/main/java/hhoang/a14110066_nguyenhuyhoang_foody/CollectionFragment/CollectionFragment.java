@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 import hhoang.a14110066_nguyenhuyhoang_foody.CollectionFragment.ImageCollection.ImageCollectionFrag;
 import hhoang.a14110066_nguyenhuyhoang_foody.CollectionFragment.LocationCollection.LocationCollectionFrag;
-import hhoang.a14110066_nguyenhuyhoang_foody.Main.CustomPagerAdapter;
+import hhoang.a14110066_nguyenhuyhoang_foody.Adapter.CustomPagerAdapter;
 import hhoang.a14110066_nguyenhuyhoang_foody.R;
 
 //Fragment bộ sưu tập thuộc tabhost ở dưới màn hình

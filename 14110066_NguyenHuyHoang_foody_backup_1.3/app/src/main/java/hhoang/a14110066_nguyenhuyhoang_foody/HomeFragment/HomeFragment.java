@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 import hhoang.a14110066_nguyenhuyhoang_foody.HomeFragment.EatWhat.FragEatWhat;
 import hhoang.a14110066_nguyenhuyhoang_foody.HomeFragment.EatWhere.FragEatWhere;
-import hhoang.a14110066_nguyenhuyhoang_foody.Main.CustomPagerAdapter;
+import hhoang.a14110066_nguyenhuyhoang_foody.Adapter.CustomPagerAdapter;
 import hhoang.a14110066_nguyenhuyhoang_foody.R;
 
 //Fragment hiển thị trang chính

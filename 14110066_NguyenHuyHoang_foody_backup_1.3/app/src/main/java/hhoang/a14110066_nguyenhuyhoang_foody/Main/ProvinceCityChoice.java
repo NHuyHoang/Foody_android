@@ -13,6 +13,7 @@ import android.widget.TextView;
 import java.io.File;
 import java.util.List;
 
+import hhoang.a14110066_nguyenhuyhoang_foody.Adapter.ListAdapter;
 import hhoang.a14110066_nguyenhuyhoang_foody.DBController.DBHandler;
 import hhoang.a14110066_nguyenhuyhoang_foody.DBController.DatabaseController;
 import hhoang.a14110066_nguyenhuyhoang_foody.DBController.RestClientController;
@@ -74,7 +75,7 @@ public class ProvinceCityChoice extends Activity {
                     public void onClick(View v) {
                         ((MyApplication)ProvinceCityChoice.this.getApplication()).setCity(tv.getText().toString());
                         //
-                        RestClientController resController = new RestClientController(getApplicationContext());
+                        RestClientController resController = new RestClientController(getApplicationContext(),null);
                         resController.GetCityId();
                         //
                         ProvinceCityChoice.this.finish();
